@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns="http://java.sun.com/xml/ns/javaee"
+xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+	
+	
+	<servlet>
+		<servlet-name>UsersControllerLogin</servlet-name>
+		<servlet-class>controller.users.UsersControllerLogin</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UsersControllerLogin</servlet-name>
+		<url-pattern>/login</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>UsersControllerLogout</servlet-name>
+		<servlet-class>controller.users.UsersControllerLogout</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UsersControllerLogout</servlet-name>
+		<url-pattern>/logout</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+	<servlet>
+		<servlet-name>ProductsAddController</servlet-name>
+		<servlet-class>controller.products.AddController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ProductsAddController</servlet-name>
+		<url-pattern>/products/add</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+		<servlet-name>ProductsDeleteController</servlet-name>
+		<servlet-class>controller.products.DeleteController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ProductsDeleteController</servlet-name>
+		<url-pattern>/products/delete</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ProductsIndexController</servlet-name>
+		<servlet-class>controller.products.IndexController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ProductsIndexController</servlet-name>
+		<url-pattern>/products</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ProductsViewController</servlet-name>
+		<servlet-class>controller.products.ViewController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ProductsViewController</servlet-name>
+		<url-pattern>/products/view</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ProductsEditController</servlet-name>
+		<servlet-class>controller.products.EditController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ProductsEditController</servlet-name>
+		<url-pattern>/products/edit</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+		<servlet-name>ProductsUpdateController</servlet-name>
+		<servlet-class>controller.products.UpdateController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ProductsUpdateController</servlet-name>
+		<url-pattern>/products/update</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+		<servlet-name>UsersControllerAdd</servlet-name>
+		<servlet-class>controller.users.UsersControllerAdd</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UsersControllerAdd</servlet-name>
+		<url-pattern>/user/add</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>UsersControllerIndex</servlet-name>
+		<servlet-class>controller.users.UsersControllerIndex</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UsersControllerIndex</servlet-name>
+		<url-pattern>/user</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+		<servlet-name>Recuperacion_20160661</servlet-name>
+		<servlet-class>pw2.Recuperacion_20160661Servlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Recuperacion_20160661</servlet-name>
+		<url-pattern>/recuperacion_20160661</url-pattern>
+	</servlet-mapping>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+	</welcome-file-list>
+</web-app>
